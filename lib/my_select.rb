@@ -3,7 +3,9 @@
  i = 0
  result = []
  while i < collection.length
-   yield array[i]
+   result << collection[i]
+   if yield(collection[i])
    i += 1
  end
+ result
 end
